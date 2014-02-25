@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @single.title %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @single.artist %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @single.length %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @single.release_date %>
+</p>
+
+<p>
+  <strong>Lyrics:</strong>
+  <%= @single.lyrics %>
+</p>
+
+<%= link_to 'Edit', edit_single_path(@single) %> |
+<%= link_to 'Back', singles_path %>

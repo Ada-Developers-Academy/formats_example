@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  artist: MyString
+  length: 1
+  release_date: 2014-02-25 11:37:43
+  lyrics: MyText
+
+two:
+  title: MyString
+  artist: MyString
+  length: 1
+  release_date: 2014-02-25 11:37:43
+  lyrics: MyText

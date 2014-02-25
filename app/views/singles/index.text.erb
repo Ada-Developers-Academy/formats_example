@@ -1,0 +1,35 @@
+<h1>Listing singles</h1>
+<h2 style="color:red"><%= @foo %></h2>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Length</th>
+      <th>Release date</th>
+      <th>Lyrics</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @singles.each do |single| %>
+      <tr>
+        <td><%= single.title %></td>
+        <td><%= single.artist %></td>
+        <td><%= single.length %></td>
+        <td><%= single.release_date %></td>
+        <td><%= single.lyrics %></td>
+        <td><%= link_to 'Show', single %></td>
+        <td><%= link_to 'Edit', edit_single_path(single) %></td>
+        <td><%= link_to 'Destroy', single, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Single', new_single_path %>

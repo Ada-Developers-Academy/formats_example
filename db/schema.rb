@@ -11,6 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140225193743) do
+
+  create_table "singles", force: true do |t|
+    t.string   "title"
+    t.string   "artist"
+    t.integer  "length"
+    t.datetime "release_date"
+    t.text     "lyrics"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
