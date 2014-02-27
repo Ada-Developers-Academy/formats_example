@@ -13,9 +13,11 @@ class SinglesController < ApplicationController
       end
     end
 
+
     respond_to do |format|
       format.html { @foo = 'bar'}
-      format.json { render json: @singles, status: :success }
+      format.json { render json: @singles, status: :ok }
+      format.xml { render xml: { msg: "sorry" }, status: :bad_request }
     end
   end
 
