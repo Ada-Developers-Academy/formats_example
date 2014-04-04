@@ -31,6 +31,7 @@ class SinglesController < ApplicationController
     respond_to do |format|
       format.html {}
       format.json { render json: response }
+      format.xml { render xml: response }
     end
   end
 
