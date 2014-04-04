@@ -85,13 +85,14 @@ class SinglesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_single
-      @single = Single.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def single_params
-      params.require(:single).permit(:title, :artist, :length, :release_date, :lyrics)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_single
+    @single = Single.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def single_params
+    params.require(:single).permit(:title, :artist, :length, :release_date, :lyrics)
+  end
 end
