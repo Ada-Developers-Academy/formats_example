@@ -23,7 +23,7 @@ describe SinglesController do
 
   context "when accessing :index" do
 
-    let!(:first_single){ Single.new(title: 'Hotel California',
+    let!(:first_single){ Single.new(title:  'Hotel California',
                                     artist: 'I hate the Eagles, man')}
 
     before(:each) do
