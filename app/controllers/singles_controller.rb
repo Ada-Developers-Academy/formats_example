@@ -29,9 +29,9 @@ class SinglesController < ApplicationController
                  release_date: @single.release_date }
 
     respond_to do |format|
-      format.html {}
+      format.html
       format.json { render json: response }
-      format.xml { render xml: response }
+      format.xml  { render xml: response }
     end
   end
 
